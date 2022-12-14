@@ -1,20 +1,39 @@
 ::selection {
-  background: hotpink;
-  color: black;
+  background: deepskyblue;
+  color: #022;
 }
 
 :root {
   background: #212;
-  color: silver;
+  color: mistyrose;
 }
 
-:any-link {
-  color: violet;
+:link {
+  color: aqua;
+}
+
+:visited {
+  color: hotpink;
+}
+
+mark {
+  background: #ee1;
+  color: #111;
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    background: #323;
+    color: pink;
+  }
 }
 
 @media (prefers-contrast: more) {
   :root {
-    background: #201;
-    color: gainsboro;
+    background: #101;
+  }
+
+  :visited {
+    color: skyblue;
   }
 }

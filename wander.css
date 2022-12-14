@@ -1,20 +1,34 @@
 ::selection {
-  background: indigo;
-  color: pink;
+  background: deepskyblue;
+  color: #022;
 }
 
 :root {
-  background: silver;
-  color: #212;
+  background: mistyrose;
+  color: #123;
 }
 
-:any-link {
+:link {
+  color: mediumblue;
+}
+
+:visited {
   color: indigo;
+}
+
+mark {
+  background: #308;
+  color: coral;
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    background: wheat;
+  }
 }
 
 @media (prefers-contrast: more) {
   :root {
-    background: gainsboro;
-    color: #201;
+    background: seashell;
   }
 }
