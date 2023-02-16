@@ -1,13 +1,18 @@
 ::selection {
-  background: deepskyblue;
-  color: #022;
+  background: #535;
+  color: #ee7;
 }
 
 :root {
-  background: #ee1;
-  color: #518;
+  background: #ee7;
+  background-image: conic-gradient(skyblue, thistle, #ee7, plum, lightsalmon, violet);
+  color: #535;
 }
 
 :any-link {
-  color: indigo;
+  color: #518;
+}
+
+:any-link:not(:focus) {
+  box-shadow: 0 0 8em 1ch powderblue;
 }
